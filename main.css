@@ -1,0 +1,30 @@
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  display: block; }
+
+li {
+  float: left;
+  margin: 1rem; }
+
+.navigation {
+  text-align: center;
+  font-size: 2em;
+  color: purple; }
+
+img {
+  height: 100%; }
+
+.margin-top {
+  margin-top: 1rem; }
+
+#userDiv {
+  display: none; }
+
+#login {
+  display: none; }
+
+.listP {
+  float: right; }
