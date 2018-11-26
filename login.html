@@ -1,0 +1,75 @@
+
+<html lang="en">
+  <head>
+    <title>Badekarpadlingen</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container-flouid">
+      <div class="navbar navbar-expand-sm navbar-light bg-light text-uppercase"><a class="navbar-brand" href="index.html"><span style="font-size: 3rem; color: purple;"><i class="fas fa-bath"></i></span></a>
+        <ul class="navbar-nav mr-auto">
+          <!--li.nav-item.active//a.nav-link(href="#") hjem
+          -->
+          <li><a class="nav-link" href="info.html">om badekarpadlingen</a></li>
+          <li><a class="nav-link" href="bilder.html">bilder og videoer</a></li>
+          <li><a class="nav-link" href="poeng.html">poengoversikt</a></li>
+          <li><a class="nav-link" href="kalender.html">kalender</a></li>
+          <li><a class="nav-link" href="kontakt.html">kontakt oss</a></li>
+          <li><a class="nav-link" href="login.html">login admin</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <form id="login">
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <h4 class="margin-top">Login for Badcom - styret</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <input class="form-control margin-top" type="text" id="Email_field" placeholder="Enter your email."/>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <input class="form-control margin-top" type="password" id="Password_field" placeholder="Enter your password."/>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <button class="btn btn-success btn-block margin-top" type="button" id="loginBtn" onclick="login()">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div id="userDiv">
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <h4 class="margin-top">Login Badcom styret</h4>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <p class="margin-top">Velkommen, du er nå logget inn som en admin bruker.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <button class="btn btn-success btn-block margin-top" type="button" id="logoutBtn" onclick="logout()">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
