@@ -28,7 +28,7 @@ var deltakereRef = db.collection("Deltakerteam");
       }
     })
   })
-  
+
 
 
 
@@ -59,5 +59,7 @@ function updatePoeng(){
   })
   .then(function(){
     console.log("Document updated successfully.")
+    document.getElementById("listInputName").value = "Score oppdatert, refresh for å se resultat";
+    document.getElementById("listInputPoeng").value = "";
   })
 }
