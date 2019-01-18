@@ -39,4 +39,8 @@ body {
   padding: 0; }
 
 #countdown {
-  margin-top: 4rem; }
+  margin-top: 40%;
+  color: black; }
+
+#fix {
+  margin-right: 0; }
